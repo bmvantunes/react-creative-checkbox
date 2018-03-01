@@ -1,0 +1,25 @@
+/**
+ * This code with scss or less would be a lot easier to read...
+ */
+
+.my-checkbox {
+  cursor: pointer;
+}
+
+.my-checkbox.left::before {
+  content: '\2610';
+  padding-right: 5px;
+}
+
+.my-checkbox.left.checked::before {
+  content: '\2611';
+}
+
+.my-checkbox.right::after {
+  content: '\2610';
+  padding-left: 5px;
+}
+
+.my-checkbox.right.checked::after {
+  content: '\2611';
+}
